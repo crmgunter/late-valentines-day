@@ -26,10 +26,10 @@ class ValentineTwo extends Component {
             <div>
                 <FlexContainer>
                     <TextContent>
-                        <ScrollAnimation animateIn="pulse">
+                        <ScrollAnimation animateIn="fadeIn" animateOut="slideOutLeft">
                             <h1>But I'm a huge fan of you!</h1>
                         </ScrollAnimation>
-                        <ScrollAnimation animateIn="fadeIn">
+                        <ScrollAnimation animateIn="fadeIn" animateOut="slideOutRight">
                             <h1>And I'm glad that you're my valentine.</h1>
                         </ScrollAnimation>
                     </TextContent>

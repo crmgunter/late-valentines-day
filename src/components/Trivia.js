@@ -52,12 +52,14 @@ class Trivia extends Component {
             <FlexContainer>
                 <TextContent>
                     <div>
+                        <ScrollAnimation animateIn="fadeIn" duration={2}>
                         <p>Here's a little bit of programming trivia.
                          Did you know that in Javascript, when you try to divide a number by 0,
                          Javascript returns 'Infinity'? So if I wrote something like
                          'console.log((1 / 0) / 10),
                          it would return... well, click the button.</p>
                         <button onClick={this.revealSecretText}>Divide by Zero</button>
+                        </ScrollAnimation>
                     </div>
                     <div>
                         {this.state.buttonClicked ?

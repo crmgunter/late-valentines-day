@@ -51,15 +51,19 @@ class Gift extends Component {
         return (
             <FlexContainer>
                 <TextContent>
+                    <ScrollAnimation animateIn="fadeIn" animateOut="slideOutLeft">
                     <h1>Here's a gift for you</h1>
+                    </ScrollAnimation>
                     {this.state.giftOpened ? (
-                        <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" duration={2}>
-                            <OpenedGiftImage><span role="img" aria-label="heart">❤️<br/><p>(It's my heart)</p></span></OpenedGiftImage>
+                        <ScrollAnimation animateIn="zoomIn" animateOut="slideOutRight">
+                            <OpenedGiftImage><span role="img" aria-label="heart">❤️<br /><p>(It's my heart)</p></span></OpenedGiftImage>
                         </ScrollAnimation>
                     ) : <div>
-                        <GiftImage onClick={this.openGift}></GiftImage>
-                        <p>Click me!</p>
-                    </div>}
+                            <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutRight">
+                                <GiftImage onClick={this.openGift}></GiftImage>
+                                <p>Click me!</p>
+                            </ScrollAnimation>
+                        </div>}
                 </TextContent>
             </FlexContainer>
         );
