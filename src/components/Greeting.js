@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-import { Animated } from "react-animated-css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const FlexContainer = styled.div`
@@ -32,10 +32,10 @@ class Greeting extends Component {
             <FlexContainer>
 
                 <TextContent>
-                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+                    <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut">
                         <h1>Hi, Syd.</h1>
                         <h3>Happy Valentine's Day</h3>
-                    </Animated>
+                    </ScrollAnimation>
                 </TextContent>
             </FlexContainer>
         );
