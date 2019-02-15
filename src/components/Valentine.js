@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import ScrollAnimation from 'react-animate-on-scroll';
 
+
 const FlexContainer = styled.div`
   height: 100vh;
   width: 100vw;

@@ -56,12 +56,10 @@ class Gift extends Component {
                         <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" duration={2}>
                             <OpenedGiftImage><span role="img" aria-label="heart">❤️<br/><p>(It's my heart)</p></span></OpenedGiftImage>
                         </ScrollAnimation>
-                    ) : <GiftImage onClick={this.openGift}></GiftImage>}
-
-                    {/* console.log("Here's a little bit of programming trivia. Did you know that in Javascript, when you try to divide a number by 0, Javascript returns 'Infinity'? So if I wrote something like 'console.log(`On a scale of 1-10, I like you ${1/0}/10`), it would return... well, click the button.")
-                    console.log(`\nOn a scale of 1-10, I like you ${1/0}/10!`)
-                    console.log('\nOr as you like to say, 20/10') */}
-
+                    ) : <div>
+                        <GiftImage onClick={this.openGift}></GiftImage>
+                        <p>Click me!</p>
+                    </div>}
                 </TextContent>
             </FlexContainer>
         );
