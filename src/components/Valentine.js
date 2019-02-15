@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const FlexContainer = styled.div`
   height: 100vh;
@@ -25,8 +26,12 @@ class Valentine extends Component {
         return (
             <FlexContainer>
                 <TextContent>
-                    <h1>I'm glad that you're my valentine.</h1>
-                    <h1>And that you're mine.</h1>
+                    <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut">
+                        <h1>I'll be honest.</h1>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut">
+                        <h1>I'm not a huge fan of this holiday.</h1>
+                    </ScrollAnimation>
                 </TextContent>
             </FlexContainer>
         );

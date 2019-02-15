@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "react": "^16.8.2",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-animated-css": "^1.0.4",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5",
     "styled-components": "^4.1.3"

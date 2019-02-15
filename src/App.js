@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Greeting from './components/Greeting'
 import Valentine from './components/Valentine'
+import Gift from './components/Gift'
+import ValentineTwo from './components/ValentineTwo';
 
 class App extends Component {
   render() {
@@ -9,6 +11,8 @@ class App extends Component {
       <div>
         <Greeting/>
         <Valentine/>
+        <ValentineTwo/>
+        <Gift/>
       </div>
     );
   }
